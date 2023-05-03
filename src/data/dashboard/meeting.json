@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Quiz",
+    "location": "St.Joes",
+    "date": "September 4, 2022"
+  },
+  {
+    "name": "Date",
+    "location": "Starbucks",
+    "date": "September 5, 2022"
+  },
+  {
+    "name": "Practice",
+    "location": "Football Field",
+    "date": "September 7, 2022"
+  }
+]

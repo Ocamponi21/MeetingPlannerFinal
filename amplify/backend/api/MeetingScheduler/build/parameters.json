@@ -1,0 +1,7 @@
+{
+    "AppSyncApiName": "MeetingScheduler",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "S3DeploymentBucket": "amplify-meetingscheduler-staging-134055-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/fd1d10c2301baea69f855044473c4cbac605d860"
+}

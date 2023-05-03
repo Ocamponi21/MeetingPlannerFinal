@@ -1,0 +1,30 @@
+enum MeetingStatus {
+  PENDING
+  ACCEPTED
+  DECLINED
+}
+
+type Participant @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  fullname: String!
+  email: String!
+  meetingName: ID @index(name: "byMeeting")
+  status: MeetingStatus
+}
+
+type Meeting @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  fullName: String!
+  location: String!
+  date: String!
+  Participants: [Participant] @hasMany(indexName: "byMeeting", fields: ["id"])
+  Hosts: [Host] @hasMany(indexName: "byMeeting", fields: ["id"])
+}
+
+type Host @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  fullName: String
+  email: String
+  meetingName: ID @index(name: "byMeeting")
+}
+ 
